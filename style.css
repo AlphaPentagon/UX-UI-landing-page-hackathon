@@ -1,45 +1,71 @@
-/* CSS HEX */
---avocado: #508716ff;
---granny-smith-apple: #bde4a8ff;
---indigo-dye: #124e78ff;
---cafe-au-lait: #b57f50ff;
---lavender-web: #dadff7ff;
+/*--lavender-web: #dadff7ff;*/
 
-/* CSS HSL */
---avocado: hsla(89, 72%, 31%, 1);
---granny-smith-apple: hsla(99, 53%, 78%, 1);
---indigo-dye: hsla(205, 74%, 27%, 1);
---cafe-au-lait: hsla(28, 41%, 51%, 1);
---lavender-web: hsla(230, 64%, 91%, 1);
+/* 
 
-/* SCSS HEX */
-$avocado: #508716ff;
-$granny-smith-apple: #bde4a8ff;
-$indigo-dye: #124e78ff;
-$cafe-au-lait: #b57f50ff;
-$lavender-web: #dadff7ff;
+CSS coding plan
 
-/* SCSS HSL */
-$avocado: hsla(89, 72%, 31%, 1);
-$granny-smith-apple: hsla(99, 53%, 78%, 1);
-$indigo-dye: hsla(205, 74%, 27%, 1);
-$cafe-au-lait: hsla(28, 41%, 51%, 1);
-$lavender-web: hsla(230, 64%, 91%, 1);
+Set up colour variables in root
+    --primary-colour: #fff;
+    --button-colour: #124e78ff;
+    --button-secondary-colour: #dadff7ff;
+    --title-colour: #508716ff
+    --main-text-colour: #000;
+    --button-text-colour: #fff;
+    --border-main-colour: #000;
 
-/* SCSS RGB */
-$avocado: rgba(80, 135, 22, 1);
-$granny-smith-apple: rgba(189, 228, 168, 1);
-$indigo-dye: rgba(18, 78, 120, 1);
-$cafe-au-lait: rgba(181, 127, 80, 1);
-$lavender-web: rgba(218, 223, 247, 1);
+Re-usable components
 
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #508716ff, #bde4a8ff, #124e78ff, #b57f50ff, #dadff7ff);
-$gradient-right: linear-gradient(90deg, #508716ff, #bde4a8ff, #124e78ff, #b57f50ff, #dadff7ff);
-$gradient-bottom: linear-gradient(180deg, #508716ff, #bde4a8ff, #124e78ff, #b57f50ff, #dadff7ff);
-$gradient-left: linear-gradient(270deg, #508716ff, #bde4a8ff, #124e78ff, #b57f50ff, #dadff7ff);
-$gradient-top-right: linear-gradient(45deg, #508716ff, #bde4a8ff, #124e78ff, #b57f50ff, #dadff7ff);
-$gradient-bottom-right: linear-gradient(135deg, #508716ff, #bde4a8ff, #124e78ff, #b57f50ff, #dadff7ff);
-$gradient-top-left: linear-gradient(225deg, #508716ff, #bde4a8ff, #124e78ff, #b57f50ff, #dadff7ff);
-$gradient-bottom-left: linear-gradient(315deg, #508716ff, #bde4a8ff, #124e78ff, #b57f50ff, #dadff7ff);
-$gradient-radial: radial-gradient(#508716ff, #bde4a8ff, #124e78ff, #b57f50ff, #dadff7ff);
+    - banner div
+        -title
+        -text
+        -button
+    - navigation links (font size, font type, colour)
+    - navigation bar
+    - buttons (font size, font colour, background colour, border radius)
+    - logo image
+    - left/right buttons
+    - social media icons
+    - 
+
+Accessibility concerns
+
+    - make sure we have alt text for images
+    - make sure we title our icon links & logo in the html
+    - use semantic html tags - header, main, nav, section, footer
+
+Responsive concerns
+
+    - use vh and vw, and percentages for width/height, padding, etc
+    - use flexbox to structure page
+
+Plan of code
+
+    Write html content first with semantic containers
+    CSS style reset
+    Split it into 4 sections in the main container: header, nav, section and footer
+    Use flexbox columns to get the overall layout of above
+    Start styling reusable components
+        - eg nav bar
+    - Go from high level to low level
+        e.g. root, then structure containers, then body, then individual components
+    - Use block comments between different logical sections above
+
+*/
+
+/*
+CSS Reset
+*/
+
+/*
+Page structure
+*/
+
+/*
+Body - font sizing, colour, type
+*/
+
+/*
+Individual components
+*/
+
+
