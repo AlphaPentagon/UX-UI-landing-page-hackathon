@@ -1,16 +1,96 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7849604&assignment_repo_type=AssignmentRepo)
-# Hackathon - Use your UI/UX skills to design a business landing page
+# Week 3 Hackathon
 
-For this hackathon, you'll be using the business idea that you brainstormed during the mindset session.
+## Design a landing page using UX & UI principles
 
-You'll need to go through the UI/UX process we've been examining this week, including:
+At the end of our third week on the School of Code bootcamp, we were tasked with using UX and UI principles to design and plan a landing page for a finctional business.
 
-- User stories and at least one user persona
-- User journey flow diagram (you can use the [draw.io extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) in VS Code to make this inside the repo)
-- Low- and high-fidelity wireframes (using tools like [Miro](https://miro.com/app/) and/or [Figma](https://www.figma.com/))
-- [Color scheme](https://coolors.co/) - remember, you can create CSS variables to manage things like colors easily!
-- A plan that breaks down how you'll code before you code as usual, using computational thinking to plan the logic of your page before you start to build (this plan should include how you're going to organize your CSS in a way that's consistent, readable, and maintainable)
+We had to create user stories, user personas, user journeys, lo-fi and hi-fi wireframes, and write plan for how we would code the design.
 
-Remember to iterate - first, get your users in mind and design looking good. Then build an MVP version - what is the [quickest way you can deliver value](https://www.planview.com/resources/articles/lean-methodology/) and start getting insight? - and then, if you have time, you can consider adding more features.
+As a pair we used tools such as Miro and Figma to implement our wireframes.
 
-At the end of the day, when you present what you've created, be sure to also show your planning process and how you crafted your UX and UI.
+This exercise taught me the how much thought and work goes into the design aspect of creating websites and apps, and that the users should always be the emphasis of any design and tech choice.
+
+### Images
+
+![User Stories](/user_flows/user_stories/user_stories.PNG)
+
+![User Personas](/user_personas/rosie_retiree.PNG)
+
+![Lofi Wireframe](/wireframes/low-fidelity-wireframe.PNG)
+
+![Hifi Wireframe](/wireframes/hidef_wireframe.PNG)
+
+Coding Plan:
+
+```
+/*
+
+CSS coding plan
+
+Set up colour variables in root
+    --primary-colour: #fff;
+    --button-colour: #124e78ff;
+    --button-secondary-colour: #dadff7ff;
+    --title-colour: #508716ff
+    --main-text-colour: #000;
+    --button-text-colour: #fff;
+    --border-main-colour: #000;
+
+Re-usable components
+
+    - banner div
+        -title
+        -text
+        -button
+    - navigation links (font size, font type, colour)
+    - navigation bar
+    - buttons (font size, font colour, background colour, border radius)
+    - logo image
+    - left/right buttons
+    - social media icons
+    -
+
+Accessibility concerns
+
+    - make sure we have alt text for images
+    - make sure we title our icon links & logo in the html
+    - use semantic html tags - header, main, nav, section, footer
+
+Responsive concerns
+
+    - use vh and vw, and percentages for width/height, padding, etc
+    - use flexbox to structure page
+
+Plan of code
+
+    Write html content first with semantic containers
+    CSS style reset
+    Split it into 4 sections in the main container: header, nav, section and footer
+    Use flexbox columns to get the overall layout of above
+    Start styling reusable components
+        - eg nav bar
+    - Go from high level to low level
+        e.g. root, then structure containers, then body, then individual components
+    - Use block comments between different logical sections above
+
+*/
+
+/*
+CSS Reset
+*/
+
+/*
+Page structure
+*/
+
+/*
+Body - font sizing, colour, type
+*/
+
+/*
+Individual components
+*/
+
+```
+
+Credits: Craig Summers, Zainab Abid and Jaden Joel
