@@ -93,4 +93,4 @@ Individual components
 
 ```
 
-Credits: Craig Summers, Zainab Abid and Jaden Joel
+Credits: Craig Summers and Simon Bowen
